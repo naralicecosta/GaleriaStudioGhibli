@@ -1,0 +1,38 @@
+* {
+  margin: 0;
+}
+body{
+   background: linear-gradient(135deg, #ffedd1, #96704a);
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+}
+.container{
+  font-size: 20px;
+  display: inline-block;
+  border: 3px solid #697091;
+  padding: 0.2px;
+  position: relative;
+  top: 30%;
+  left: 50%;
+  transform: translate(-40%, 1%);
+  border-radius: 10px;
+  color: rgb(32, 32, 32);
+}
+.gallery {
+  display: flex;
+  width: 100%;
+  height: 100vh;
+}
+img {
+  aspect-ratio: 9/16;
+  min-width: 0;
+  flex: 1 1 10px;
+  object-fit: cover;
+  opacity: 0.5;
+  transition: 0.5s;
+}
+img:hover {
+  flex: 1 1 100px;
+  opacity: 1;
+}
